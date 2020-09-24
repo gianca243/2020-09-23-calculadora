@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Calculadora</title>
+</head>
+<body class="bg-secondary">
+  <div class="caja container" id="contenedor">
+    <div class="row d-flex justify-content-center">
+      <h1 id="titulo">Calculadora</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <input type="text" class="form-control form-control-lg col-8 bg-secondary text-white" id="teclado">
+    </div>
+    <div class="row">
+      <div class="col-8" id="caja">
+        <div class="row d-flex justify-content-center caja text-white">
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita1">%</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita2">CE</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">C</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3"><-</div>
+        </div>
+        <div class="row d-flex justify-content-center caja text-white">
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita1">1/x</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita2">x^2</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">sqrt</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">/</div>
+        </div>
+        <div class="row d-flex justify-content-center caja text-white">
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita1">7</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita2">8</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">9</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">X</div>
+        </div>
+        <div class="row d-flex justify-content-center text-white">
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita1">4</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita2">5</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">6</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">-</div>
+        </div>
+        <div class="row d-flex justify-content-center text-white">
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita1">1</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita2">2</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">3</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">+</div>
+        </div>
+        <div class="row d-flex justify-content-center text-white">
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita1">+/-</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita2">0</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">.</div>
+          <div class="cajita col-2 p-5 m-2 bg-dark" id="cajita3">=</div>
+        </div>
+      </div>
+      <div class="col-4">
+        <h3>Historial</h3>
+        <div class="text-white" id="historial">
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <br>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
